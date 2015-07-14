@@ -18,6 +18,7 @@ using ZumoE2EServerApp.DataObjects;
 using ZumoE2EServerApp.Models;
 using Newtonsoft.Json.Linq;
 using ZumoE2EServerApp.Utils;
+using Microsoft.WindowsAzure.Mobile.Service.Security.Providers;
 
 namespace ZumoE2EServerApp
 {

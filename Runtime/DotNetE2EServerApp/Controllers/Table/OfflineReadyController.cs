@@ -10,9 +10,11 @@ using System.Web.Http.OData;
 using Microsoft.WindowsAzure.Mobile.Service;
 using ZumoE2EServerApp.DataObjects;
 using ZumoE2EServerApp.Models;
+using Microsoft.WindowsAzure.Mobile.Service.Security;
 
 namespace ZumoE2EServerApp.Controllers
 {
+    [AuthorizeLevel(AuthorizationLevel.Anonymous)] 
     public class OfflineReadyController : TableController<OfflineReady>
     {
         private SDKClientTestContext context;
